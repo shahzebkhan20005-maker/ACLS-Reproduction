@@ -1,0 +1,40 @@
+{
+  "paper": "ACLS: Adaptive and Conditional Label Smoothing for Network Calibration (ICCV 2023)",
+  "dataset": "CIFAR-10",
+  "architecture": "torchvision ResNet-50, final layer changed to 10 classes",
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "pytorch": "2.11.0+cu130",
+  "torchvision": "0.26.0+cu130",
+  "seed": 42,
+  "batch_size": 128,
+  "epochs_configured": 5,
+  "smoke_test": true,
+  "max_train_batches_per_epoch": null,
+  "optimizer": "SGD",
+  "learning_rate": 0.001,
+  "momentum": 0.9,
+  "weight_decay": 0.0005,
+  "lr_milestones": [],
+  "lr_gamma": 0.1,
+  "validation_fraction": 0.1,
+  "augmentation": [
+    "RandomCrop(32, padding=4)",
+    "RandomHorizontalFlip"
+  ],
+  "normalization_mean": [
+    0.4914,
+    0.4822,
+    0.4465
+  ],
+  "normalization_std": [
+    0.247,
+    0.2435,
+    0.2616
+  ],
+  "acls_margin": 6.0,
+  "acls_lambda1": 0.1,
+  "acls_lambda2": 0.01,
+  "calibration_bins": 15
+}

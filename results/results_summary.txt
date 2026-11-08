@@ -1,0 +1,18 @@
+ACLS CIFAR-10 Reproduction — Results Summary
+================================================
+Experiment mode: FULL RUN
+Device: cuda
+
+Reproduced test metrics:
+      Model  Accuracy (%)  ECE (%)  AECE (%)
+Baseline CE     45.840001 2.387858  2.387860
+       ACLS     13.249999 1.138310  1.017359
+
+Original paper CIFAR-10 / ResNet-50 reference:
+        Model  Original paper Accuracy (%)  Original paper ECE (%)  Original paper AECE (%)
+Baseline (CE)                         93.2                    5.85                     5.84
+         ACLS                         95.4                    1.12                     2.87
+
+Important protocol note:
+The paper reports validation-split results; this notebook reports the held-out test split.
+Do not claim exact reproduction if the data split, augmentation, stem, software or hardware differ.

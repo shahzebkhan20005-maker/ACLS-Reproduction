@@ -1,0 +1,3 @@
+Model,Original paper Accuracy (%),Original paper ECE (%),Original paper AECE (%),Accuracy (%),ECE (%),AECE (%),Accuracy difference (ours - paper),ECE difference (ours - paper),AECE difference (ours - paper)
+Baseline (CE),93.2,5.85,5.84,,,,,,
+ACLS,95.4,1.12,2.87,13.249999284744263,1.1383102869987487,1.0173589,-82.15000071525574,0.018310286998748593,-1.852641100883484
